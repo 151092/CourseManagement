@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CourseManagement" Class="CourseManagementDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.3.115\SQLEXP2008R2;Initial Catalog=CourseManagement;Persist Security Info=True;User ID=sa" SettingsObjectName="CourseManagement.Model.Properties.Settings" SettingsPropertyName="CourseManagementConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.StudentMaster" Member="StudentMasters">
+    <Type Name="StudentMaster">
+      <Column Name="StudentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="StudentMaster_CourseStudentRef" Member="CourseStudentRefs" ThisKey="StudentId" OtherKey="StudentId" Type="CourseStudentRef" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CourseMaster" Member="CourseMasters">
+    <Type Name="CourseMaster">
+      <Column Name="CourseId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CourseName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CourseDuration" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CourseFees" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="CourseMaster_CourseStudentRef" Member="CourseStudentRefs" ThisKey="CourseId" OtherKey="CourseId" Type="CourseStudentRef" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CourseStudentRef" Member="CourseStudentRefs">
+    <Type Name="CourseStudentRef">
+      <Column Name="CourseStudentRefId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CourseId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="CourseMaster_CourseStudentRef" Member="CourseMaster" ThisKey="CourseId" OtherKey="CourseId" Type="CourseMaster" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="StudentMaster_CourseStudentRef" Member="StudentMaster" ThisKey="StudentId" OtherKey="StudentId" Type="StudentMaster" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

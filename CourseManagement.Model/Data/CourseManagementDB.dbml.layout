@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CourseManagementDB">
+  <DataContextMoniker Name="/CourseManagementDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="363a4d8d-15b1-4cd4-b804-622eaa0c6e38" absoluteBounds="1.5, 1.375, 2, 1.9631982421875">
+      <DataClassMoniker Name="/CourseManagementDBDataContext/StudentMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1a71ffe-0d72-46b4-a229-4967a9a0fe4a" absoluteBounds="1.5150000000000001, 1.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0d56e7f-4e18-4fbb-95cd-651f8f13d399" absoluteBounds="7.25, 1.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/CourseManagementDBDataContext/CourseMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aff48574-c851-4e9f-a581-a08ab2108005" absoluteBounds="7.265, 1.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba91e700-0bd0-4ccf-abd1-b37bfcfb4142" absoluteBounds="4.5, 1.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CourseManagementDBDataContext/CourseStudentRef" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe4e2412-7d30-4857-8894-590f78c8c1f4" absoluteBounds="4.515, 2.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.25 : 2.51044840494792); (6.5 : 2.51044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CourseManagementDBDataContext/CourseMaster/CourseMaster_CourseStudentRef" />
+      <nodes>
+        <classShapeMoniker Id="f0d56e7f-4e18-4fbb-95cd-651f8f13d399" />
+        <classShapeMoniker Id="ba91e700-0bd0-4ccf-abd1-b37bfcfb4142" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 2.53929768880208); (4.5 : 2.53929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CourseManagementDBDataContext/StudentMaster/StudentMaster_CourseStudentRef" />
+      <nodes>
+        <classShapeMoniker Id="363a4d8d-15b1-4cd4-b804-622eaa0c6e38" />
+        <classShapeMoniker Id="ba91e700-0bd0-4ccf-abd1-b37bfcfb4142" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

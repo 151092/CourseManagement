@@ -1,0 +1,9 @@
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Entity\bin\Debug\CourseManagement.Entity.dll
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Entity\bin\Debug\CourseManagement.Entity.pdb
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Entity\obj\Debug\CourseManagement.Entity.dll
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Entity\obj\Debug\CourseManagement.Entity.pdb
+D:\CourseManagement\CourseManagement\CourseManagement.Entity\bin\Debug\CourseManagement.Entity.dll
+D:\CourseManagement\CourseManagement\CourseManagement.Entity\bin\Debug\CourseManagement.Entity.pdb
+D:\CourseManagement\CourseManagement\CourseManagement.Entity\obj\Debug\CourseManagement.Entity.csprojResolveAssemblyReference.cache
+D:\CourseManagement\CourseManagement\CourseManagement.Entity\obj\Debug\CourseManagement.Entity.dll
+D:\CourseManagement\CourseManagement\CourseManagement.Entity\obj\Debug\CourseManagement.Entity.pdb

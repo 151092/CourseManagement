@@ -1,0 +1,16 @@
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Model\bin\Debug\CourseManagement.Model.dll.config
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Model\bin\Debug\CourseManagement.Model.dll
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Model\bin\Debug\CourseManagement.Model.pdb
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Model\bin\Debug\CourseManagement.Entity.dll
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Model\bin\Debug\CourseManagement.Entity.pdb
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Model\obj\Debug\CourseManagement.Model.csprojResolveAssemblyReference.cache
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Model\obj\Debug\CourseManagement.Model.dll
+E:\Sample\CourseManagement\CourseManagement\CourseManagement.Model\obj\Debug\CourseManagement.Model.pdb
+D:\CourseManagement\CourseManagement\CourseManagement.Model\bin\Debug\CourseManagement.Model.dll.config
+D:\CourseManagement\CourseManagement\CourseManagement.Model\bin\Debug\CourseManagement.Model.dll
+D:\CourseManagement\CourseManagement\CourseManagement.Model\bin\Debug\CourseManagement.Model.pdb
+D:\CourseManagement\CourseManagement\CourseManagement.Model\bin\Debug\CourseManagement.Entity.dll
+D:\CourseManagement\CourseManagement\CourseManagement.Model\bin\Debug\CourseManagement.Entity.pdb
+D:\CourseManagement\CourseManagement\CourseManagement.Model\obj\Debug\CourseManagement.Model.csprojResolveAssemblyReference.cache
+D:\CourseManagement\CourseManagement\CourseManagement.Model\obj\Debug\CourseManagement.Model.dll
+D:\CourseManagement\CourseManagement\CourseManagement.Model\obj\Debug\CourseManagement.Model.pdb
